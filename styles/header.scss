@@ -1,0 +1,126 @@
+@import "variables";
+
+header {
+	position: relative;
+	height: 700px;
+
+	&.index {
+		background-image: url("../img/header.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	&.contact {
+		background-image: url("../img/about.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	&.about {
+		background-image: url("../img/contact.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	nav {
+		width: 980px;
+		margin: auto;
+		height: 83px;
+		background-color: rgba(#FFF,0.8);
+		padding: 20px 25px 0px 25px;
+
+		.brand { 
+			width: 300px; 
+			display: inline-block;
+			height: 34px;
+			font-family: $first-font;
+			text-decoration: none;
+			font-size: 33px;
+			color: $red;
+			line-height: 29px;
+			span { display: inline-block;margin-top:5px;  text-align: center;}
+		}
+
+		.nav {
+			display: inline-block;
+			margin-right: 50px;
+			li {
+				display: inline-block;
+				a {
+					font-family: "Lato-Regular";	
+					font-weight: bold;
+					color: $main-color;
+					font-size: 17px;
+					text-decoration: none;
+					text-transform: uppercase;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				margin-right: 30px;
+			}
+		}
+		.share {
+			display:  inline-block;
+			border-left: 1px solid $main-color;
+			height: 40px;
+			margin-top: 7px;
+			position: absolute;
+
+			ul {
+				display: inline;
+				margin-left: -5px;
+				li {
+					display: inline-block;
+
+					img { 
+						width: 38px; opacity: 0.6;
+						&:hover {
+							opacity: 0.8;
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	.title {
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(#333333, 0.7);
+		color: white;
+
+		&.about {
+			h1 {
+				letter-spacing: 20px;
+				font-size: 150px;	
+				margin-top: 80px;
+
+				&:nth-child(2) {
+					margin-top: -100px;
+				}
+			}
+		}
+		&.contact {
+			margin-top: 150px;
+		}
+
+		h1 {
+			font-family: $first-font;
+			font-size: 95px;
+			margin-top: 120px;
+			letter-spacing: -2px;
+		}
+	
+		.arc {
+			margin-left: -45px;
+		}
+		small {
+			font-size: 95px;
+			letter-spacing: 0px;
+		}
+		.subtitle { 
+			font-size: 25px; 
+			font-family: $second-font;
+			margin-top: -30px;
+		}
+	}
+}

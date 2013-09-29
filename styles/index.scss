@@ -1,0 +1,54 @@
+@import "variables";
+@import "header";
+@import "keywords";
+
+
+#recent-works {
+	h2 {
+		color: $main-color;
+		font-family: $second-title-font;
+		font-size: 23px;
+		text-transform: uppercase;
+	}
+
+	.works-list {
+		margin-bottom: 5px;
+
+		li {
+			display: inline-block;
+			width: 200px;
+			height: 250px;
+			margin-right: 30px;
+
+			.img-link {
+				position: relative;
+
+				.badge {
+					width: 200px;
+					transition: all .3s ease-in-out;
+					&:hover {
+						transition: all .3s ease-in-out;
+						-webkit-transform: rotate(360deg);
+					}
+				}
+			}
+			h4 {
+				font-family: $first-font;
+				color: $main-color;
+				text-align: center;
+				margin: 8px auto;
+				width: 95%;
+				font-size: 17px;
+				border-bottom: 1px solid rgba($main-color, 0.5);
+			}
+			p {
+				font-family: $second-font;
+				font-size: 14px;
+				text-align: justify;
+				color: $blue;
+				width: 90%;
+				margin: auto;
+			}
+		}
+	}
+}

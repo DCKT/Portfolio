@@ -1,0 +1,48 @@
+@import "variables";
+
+#contact {
+	min-height: 350px;
+	width: 57%;
+
+	.left {
+		margin-top: 10px;
+
+	}
+	form {
+		label {
+			font-family: $second-font;
+			width: 68px;
+			display: inline-block;
+		}
+		input {
+			height: 33px;
+			margin: 10px;
+			width: 210px;
+			font-family: $second-font;
+		}
+
+		textarea {
+			width: 500px;
+			height: 250px;
+			margin-bottom: 15px;
+			font-family: $second-font;
+		}
+
+		#send {
+			display: block;
+			clear: both;
+			margin: auto;
+			width: 100%;
+			height: 45px;
+			font-family: $first-font;
+			font-size: 35px;
+			background-color: $main-color;
+			color: white;
+			border: none;
+
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+}
